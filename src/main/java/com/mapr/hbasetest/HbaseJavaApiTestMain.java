@@ -15,10 +15,8 @@ import java.util.concurrent.Future;
 
 public class HbaseJavaApiTestMain {
 
-  private static final Logger LOG = LoggerFactory.getLogger(HbaseJavaApiTestMain.class);
 
   public static void main(String[] args) throws InterruptedException {
-    LOG.
     ExecutorService executor = Executors.newFixedThreadPool(6);
     HbaseTestConnection testConnection = new HbaseTestConnection();
     Configuration conf = testConnection.getHbaseConfig();
